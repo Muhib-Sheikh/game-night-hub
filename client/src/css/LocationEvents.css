@@ -2,38 +2,66 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
 }
 
-.location-events header {
-    background-color: var(--main-color);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 10px;
-}
-
-.location-image img {
-    width: 300px;
-    height: auto;
-    border: 1px solid white;
-    margin-left: 20px;
-}
-
-.location-events header p {
-    color: white;
-    font-size: 0.8em;
-    margin-bottom: 0px;
-}
-
-.location-events main {
-    text-align: center;
-    padding: 30px;
-    margin: 30px;
+#root .location-events>header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 2.5rem 4rem;
+    background: rgba(12, 17, 40, 0.88);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.location-events main i {
-    margin-right: 10px;
+#root .location-events .location-info h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+#root .location-events>header p {
+    color: #dce1f3;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.location-image span {
+    display: block;
+    line-height: 1;
+}
+
+#root .events-list {
+    width: min(900px, 100%);
+    margin: 2rem auto;
+    padding: 0 1.5rem 3rem;
+}
+
+#root .events-list>h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#root .event-card {
+    background: rgba(12, 17, 40, 0.94);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#root .event-card h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+#root .event-card p {
+    color: #dce1f3;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+#root .event-card p:last-child {
+    margin-bottom: 0;
 }
